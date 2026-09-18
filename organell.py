@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-st.title("⏱️ เกมเติมศัพท์จับเวลา")
+st.title("ทายชื่อ ออร์แกเนลล์")
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
@@ -154,43 +154,43 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: C_ t o_ _e l _ t _ n A proteins fibers that gives the cell structural support.",
+    "ข้อ 1: "C_ t o_ _e l _ t _ n" A proteins fibers that gives the cell structural support.",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: L y s _ s _ _ e  polysaccharides and lipids into their respective building-block molecules. 🐟",
+    "ข้อ 2: "L y s _ s _ _ e"  polysaccharides and lipids into their respective building-block molecules.",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: G _ l _ i  C o m _ _ e x It modifies and packages proteins ER for delivery outside or around the cel`. 🐟",
+    "ข้อ 3: "G _ l _ i  C o m _ _ e x" It modifies and packages proteins ER for delivery outside or around the cel`.",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: V a c _ o _ e A storage sacs. 🐟",
+    "ข้อ 4: "V a c _ o _ e" A storage sacs.",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5:  M _ _ o c h o _ d _ _ a  generate ATP. 🐟",
+    "ข้อ 5:  "M _ _ o c h o _ d _ _ a"  generate ATP.",
     value=st.session_state.ans2_val,
 )
 ans6 = st.text_input(
-    "ข้อ 6: R _ b _ s _ m e synthesizes proteins by translating genetic information encoded in mRNA . 🐟",
+    "ข้อ 6: "R _ b _ s _ m e" synthesizes proteins by translating genetic information encoded in mRNA .",
     value=st.session_state.ans3_val,
 )
 ans7 = st.text_input(
-    "ข้อ 7: _ _ c l _ u_  The control center or brain of the cel. 🐟",
+    "ข้อ 7: "_ _ c l _ u_"  The control center or brain of the cel.",
     value=st.session_state.ans4_val,
 )
 ans8 = st.text_input(
-    "ข้อ 8:E n_ o _ _ _s_ _c R e _ i _u _u m A network of membranes that folds and transports proteins and lipids. 🐟",
+    "ข้อ 8: "E n_ o _ _ _s_ _c R e _ i _u _u m" A network of membranes that folds and transports proteins and lipids.",
     value=st.session_state.ans2_val,
 )
 ans9 = st.text_input(
-    "ข้อ 9: C _ l_  _a_l A outer layer that surrounds the cell membrane. 🐟",
+    "ข้อ 9: "C _ l_  _a_l" A outer layer that surrounds the cell membrane.",
     value=st.session_state.ans3_val,
 )
 ans10 = st.text_input(
-    "ข้อ 10: P _ r _ x i s _ m e involved in the catabolism of very long chain fatty acids. 🐟",
+    "ข้อ 10: "P _ r _ x i s _ m e" involved in the catabolism of very long chain fatty acids.",
     value=st.session_state.ans4_val,
 )
 
