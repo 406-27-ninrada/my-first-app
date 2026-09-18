@@ -92,38 +92,38 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
+        st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
 
     # ตรวจข้อ 6
     if u_ans6 == "Ribosome":
         st.success("✅ ข้อ 6: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
+        st.error(f"❌ ข้อ 6: ยังไม่ถูกต้อง (คุณตอบ '{u_ans6}')")
    # ตรวจข้อ 7
     if u_ans7 == "Nucleus":
         st.success("✅ ข้อ 7: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
+        st.error(f"❌ ข้อ 7: ยังไม่ถูกต้อง (คุณตอบ '{u_ans7}')")
  # ตรวจข้อ 8
     if u_ans8 == "Endoplasmic Reticulum":
         st.success("✅ ข้อ 8: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 8: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
+        st.error(f"❌ ข้อ 8: ยังไม่ถูกต้อง (คุณตอบ '{u_ans8}')")
  # ตรวจข้อ 9
     if u_ans9 == "cell walr":
         st.success("✅ ข้อ 9: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
+        st.error(f"❌ ข้อ 9: ยังไม่ถูกต้อง (คุณตอบ '{u_ans9}')")
  # ตรวจข้อ 10
     if u_ans10 == "Peroxisome":
         st.success("✅ ข้อ 10: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
+        st.error(f"❌ ข้อ 10: ยังไม่ถูกต้อง (คุณตอบ '{u_ans10}')")
 
 
 
@@ -171,27 +171,27 @@ ans4 = st.text_input(
 )
 ans5 = st.text_input(
     "ข้อ 5:  'M _ _ o c h o _ d _ _ a'  generate ATP.",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans5_val,
 )
 ans6 = st.text_input(
     "ข้อ 6: 'R _ b _ s _ m e' synthesizes proteins by translating genetic information encoded in mRNA .",
-    value=st.session_state.ans3_val,
+    value=st.session_state.ans6_val,
 )
 ans7 = st.text_input(
     "ข้อ 7: '_ _ c l _ u_'  The control center or brain of the cel.",
-    value=st.session_state.ans4_val,
+    value=st.session_state.ans7_val,
 )
 ans8 = st.text_input(
     "ข้อ 8: 'E n_ o _ _ _s_ _c R e _ i _u _u m' A network of membranes that folds and transports proteins and lipids.",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans8_val,
 )
 ans9 = st.text_input(
     "ข้อ 9: 'C _ l_  _a_l' A outer layer that surrounds the cell membrane.",
-    value=st.session_state.ans3_val,
+    value=st.session_state.ans9_val,
 )
 ans10 = st.text_input(
     "ข้อ 10: 'P _ r _ x i s _ m e' involved in the catabolism of very long chain fatty acids.",
-    value=st.session_state.ans4_val,
+    value=st.session_state.ans10_val,
 )
 
 
@@ -200,12 +200,12 @@ st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 st.session_state.ans3_val = ans3
 st.session_state.ans4_val = ans4
-st.session_state.ans1_val = ans5
-st.session_state.ans2_val = ans6
-st.session_state.ans3_val = ans7
-st.session_state.ans4_val = ans8
-st.session_state.ans3_val = ans9
-st.session_state.ans4_val = ans10
+st.session_state.ans5_val = ans5
+st.session_state.ans6_val = ans6
+st.session_state.ans7_val = ans7
+st.session_state.ans8_val = ans8
+st.session_state.ans9_val = ans9
+st.session_state.ans10_val = ans10
 
 # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
